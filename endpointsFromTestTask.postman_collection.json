@@ -1,0 +1,477 @@
+{
+	"info": {
+		"_postman_id": "6df30be2-9534-46b8-8538-e77e420ff43e",
+		"name": "endpointsFromTestTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1) getAirCompanies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airCompanies",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airCompanies"
+					]
+				},
+				"description": "get all companies"
+			},
+			"response": []
+		},
+		{
+			"name": "1) getAirCompaniesByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airCompany/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airCompany",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1) createAirCompany",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"MAU\",\r\n    \"companyType\": \"transport\",\r\n    \"foundedAt\": \"06.04.2003\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1) updateAirCompany",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"name\":\"Ryanair\",\r\n    \"companyType\": \"transport\",\r\n    \"foundedAt\": \"06.04.2006\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateAirCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateAirCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1) deleteAirCompanyByID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteAirCompany/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteAirCompany",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllAirplanes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airplanes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airplanes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAirplaneByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airplane/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airplane",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5) createAirplane",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Boing362\",\r\n    \"factory_s_n\": 2423424,\r\n    \"numberOfFlights\": 12,\r\n    \"flightDistance\": 243.4,\r\n    \"fuelCapacity\": 1200,\r\n    \"type\": \"Airbus\",\r\n    \"createdAt\": \"10.05.2013\",\r\n    \"airCompID\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airplane",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airplane"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateAirplane",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"name\": \"Ryanair363\",\r\n    \"factory_s_n\": 2423534,\r\n    \"numberOfFlights\": 16,\r\n    \"flightDistance\": 985.4,\r\n    \"fuelCapacity\": 1210,\r\n    \"type\": \"Airbus\",\r\n    \"createdAt\": \"10.05.2014\",\r\n    \"airCompID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateAirplane",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateAirplane"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAirplaneByID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteAirplane/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteAirplane",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllFlights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/flights",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFlightByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/flight/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6) createFlight",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"flightStatus\": \"PENDING\",\r\n    \"departureCountry\": \"USA\",\r\n    \"destinationCountry\": \"UA\",\r\n    \"distance\": 1354.4,\r\n    \"estimatedFlightTime\": \"02:33\",\r\n    \"createdAt\": \"25-05-2021 12:35\",\r\n    \"airCompID\": 0,\r\n    \"airplaneID\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/flight",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateFlight",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"flightStatus\": \"PENDING\",\r\n    \"departureCountry\": \"USA\",\r\n    \"destinationCountry\": \"UA\",\r\n    \"distance\": 1354.4,\r\n    \"estimatedFlightTime\": \"02:33\",\r\n    \"createdAt\": \"25-05-2021 12:35\",\r\n    \"airCompID\": 0,\r\n    \"airplaneID\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080//updateFlight",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"",
+						"updateFlight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteFlightByID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteFlight/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteFlight",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2) moveAirplaneBetweenCompanies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"airCompID\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/moveAirplane",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"moveAirplane"
+					]
+				},
+				"description": " move airplanes between companies:\r\n airCompID - new Company ID"
+			},
+			"response": []
+		},
+		{
+			"name": "3) find all Air Company Flights by status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"flightStatus\": \"ACTIVE\",\r\n    \"airCompany\": {\r\n            \"name\": \"Boing\"\r\n        }\r\n}\r\n//you can set status by: \"COMPLETED\", \"ACTIVE\", \"DELAYED\", \"PENDING\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/flightStatus",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flightStatus"
+					]
+				},
+				"description": "\"name\" - company name for identification of Air Company"
+			},
+			"response": []
+		},
+		{
+			"name": "4) find all Flights in ACTIVE status and started more than 24 hours ago",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/started24HoursAgo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"started24HoursAgo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7) change Flight status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"flightStatus\": \"COMPLETED\",\r\n    \"delayStartedAt\": \"00:00\",\r\n    \"createdAt\": \"25-05-2021 15:35\",\r\n    \"endedAt\": \"25-05-2021 18:45\"\r\n}\r\n//you can set status by: \"COMPLETED\", \"ACTIVE\", \"DELAYED\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/setStatus",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"setStatus"
+					]
+				},
+				"description": "\"id\" - ID selected Flight\r\nif status to change is DELAYED – set delayStartedAt\r\nif status to change is ACTIVE – set createdAt\r\nif status to change is COMPLETED set endedAt"
+			},
+			"response": []
+		},
+		{
+			"name": "8) find all Flights in COMPLETED status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/completedFlight",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"completedFlight"
+					]
+				},
+				"description": "find all Flights in COMPLETED status and difference between\r\nstarted and ended time is bigger than estimated flight time"
+			},
+			"response": []
+		}
+	]
+}
