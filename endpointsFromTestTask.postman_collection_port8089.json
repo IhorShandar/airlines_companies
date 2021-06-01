@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6df30be2-9534-46b8-8538-e77e420ff43e",
+		"_postman_id": "792a13c2-bb82-42bd-bdb6-31f481d9d2a8",
 		"name": "endpointsFromTestTask",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,11 +11,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/airCompanies",
+					"raw": "localhost:8089/airCompanies",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"airCompanies"
 					]
@@ -30,11 +30,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/airCompany/1",
+					"raw": "localhost:8089/airCompany/1",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"airCompany",
 						"1"
@@ -58,11 +58,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/airCompany",
+					"raw": "localhost:8089/airCompany",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"airCompany"
 					]
@@ -85,11 +85,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/updateAirCompany",
+					"raw": "localhost:8089/updateAirCompany",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"updateAirCompany"
 					]
@@ -103,11 +103,11 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/deleteAirCompany/3",
+					"raw": "localhost:8089/deleteAirCompany/3",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"deleteAirCompany",
 						"3"
@@ -134,11 +134,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/airplanes",
+					"raw": "localhost:8089/airplanes",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"airplanes"
 					]
@@ -152,11 +152,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/airplane/1",
+					"raw": "localhost:8089/airplane/1",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"airplane",
 						"1"
@@ -180,11 +180,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/airplane",
+					"raw": "localhost:8089/airplane",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"airplane"
 					]
@@ -207,11 +207,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/updateAirplane",
+					"raw": "localhost:8089/updateAirplane",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"updateAirplane"
 					]
@@ -225,11 +225,11 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/deleteAirplane/8",
+					"raw": "localhost:8089/deleteAirplane/8",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"deleteAirplane",
 						"8"
@@ -244,11 +244,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/flights",
+					"raw": "localhost:8089/flights",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"flights"
 					]
@@ -262,11 +262,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/flight/1",
+					"raw": "localhost:8089/flight/1",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"flight",
 						"1"
@@ -290,11 +290,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/flight",
+					"raw": "localhost:8089/flight",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"flight"
 					]
@@ -317,13 +317,12 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080//updateFlight",
+					"raw": "localhost:8089/updateFlight",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
-						"",
 						"updateFlight"
 					]
 				}
@@ -336,11 +335,11 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/deleteFlight/6",
+					"raw": "localhost:8089/deleteFlight/6",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"deleteFlight",
 						"6"
@@ -364,11 +363,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/moveAirplane",
+					"raw": "localhost:8089/moveAirplane",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"moveAirplane"
 					]
@@ -395,11 +394,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/flightStatus",
+					"raw": "localhost:8089/flightStatus",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"flightStatus"
 					]
@@ -414,11 +413,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/started24HoursAgo",
+					"raw": "localhost:8089/started24HoursAgo",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"started24HoursAgo"
 					]
@@ -441,11 +440,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/setStatus",
+					"raw": "localhost:8089/setStatus",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"setStatus"
 					]
@@ -460,11 +459,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/completedFlight",
+					"raw": "localhost:8089/completedFlight",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8089",
 					"path": [
 						"completedFlight"
 					]
