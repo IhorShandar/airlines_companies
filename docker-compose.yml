@@ -1,0 +1,22 @@
+version: '3'
+services:
+  database:
+
+    build: 'docker'
+    container_name: localhost
+    environment:
+      MYSQL_ROOT_PASSWORD: 1111
+      MYSQL_DATABASE: airlines
+      MYSQL_PASSWORD: 1111
+#    ports:
+#     - '6033:3306'
+  jdk:
+    build: .
+    container_name: app_jdk
+    ports:
+      - '8089:8080'
+#    depends_on:
+#      - database
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://database:3306/airlines?createDatabaseIfNotExist=true&serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8
+      SPRING_DATASOURCE_PASSWORD: 1111
