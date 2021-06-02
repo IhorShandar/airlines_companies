@@ -1,5 +1,7 @@
 # airlines_companies
 
+METHOD 1
+
 Go to the page: https://hub.docker.com/repository/docker/shandar1997/airlines/tags?page=1&ordering=last_updated. There are docker images that are created in this program.
 Pull theese images from this page in own docker:
 
@@ -16,4 +18,10 @@ Wait until the database is ready to use (about 30s). Then run application (app_j
   docker run -d -p 8089:8080 --name app --link localhost:mysql  shandar1997/airlines:app_jdk
 
 After open Postman, download file "endpointsFromTestTask.postman_collection_port8089.json" from this repository. Import this collection into Postman and test all required endpoints.
+to see tips on how the endpoint works - right-click on the endpoint and select Edit
+
+METHOD 2
+
+Download archive in branch add_jarfile unpack it. Open this project in IDE. Open terminal in IDE and run command: docker-compose up
+After open Postman, import collection "endpointsFromTestTask.postman_collection_port8089.json" from this project into Postman and test all required endpoints.
 to see tips on how the endpoint works - right-click on the endpoint and select Edit
