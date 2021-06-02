@@ -3,13 +3,13 @@
 METHOD 1
 
 Go to the page: https://hub.docker.com/repository/docker/shandar1997/airlines/tags?page=1&ordering=last_updated. There are docker images that are created in this program.
-Pull theese images from this page in own docker:
+Pull these images from this page in own docker:
 
   docker pull shandar1997/airlines:mysqldb
   
   docker pull shandar1997/airlines:app_jdk
 
-Than create containers by theese images. First run MySQL database:
+Than create containers by these images. First run MySQL database:
 
   docker run --name localhost -e MYSQL_ROOT_PASSWORD=1111 -e MYSQL_DATABASE=airlines -e MYSQL_PASSWORD=1111 -d shandar1997/airlines:mysqldb
   
