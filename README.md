@@ -23,5 +23,6 @@ to see tips on how the endpoint works - right-click on the endpoint and select E
 METHOD 2
 
 Download archive in branch add_jarfile unpack it. Open this project in IDE. Open terminal in IDE and run command: docker-compose up
+
 After open Postman, import collection "endpointsFromTestTask.postman_collection_port8089.json" from this project into Postman and test all required endpoints.
 to see tips on how the endpoint works - right-click on the endpoint and select Edit
