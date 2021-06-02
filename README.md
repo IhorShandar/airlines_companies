@@ -2,8 +2,8 @@
 
 METHOD 1
 
-Go to the page: https://hub.docker.com/r/shandar1997/airlines/tags?page=1&ordering=last_updated. There are docker images that are created in this program.
-Pull these images from this page in own docker or insert in terminal commands:
+Go to the page: https://hub.docker.com/r/shandar1997/airlines/tags?page=1&ordering=last_updated. There are docker images that are created in this program. 
+The test database is already recorded in the Docker images. Pull these images from this page in own docker or insert in terminal commands:
 
   docker pull shandar1997/airlines:mysqldb
   
@@ -24,5 +24,5 @@ METHOD 2
 
 Download archive in branch add_jarfile unpack it. Open this project in IDE. Open terminal in IDE and run command: docker-compose up
 
-After open Postman, import collection "endpointsFromTestTask.postman_collection_port8089.json" from this project into Postman and test all required endpoints.
+After open Postman, import collection "endpointsFromTestTask.postman_collection_port8089.json" from this project into Postman and test all required endpoints. 
 to see tips on how the endpoint works - right-click on the endpoint and select Edit
