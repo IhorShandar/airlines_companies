@@ -1,0 +1,22 @@
+//create images and containers
+docker-compose up database
+	//after 30s
+docker-compose up jdk
+
+//create containers when you create images from docker-compose
+docker run --name localhost -e MYSQL_ROOT_PASSWORD=1111 -e MYSQL_DATABASE=airlines -e MYSQL_PASSWORD=1111 -d airlines_companies_database:latest
+docker container logs localhost
+	//after 30s
+docker run -d -p 8089:8080 --name app --link localhost:mysql  airlines_companies_jdk
+docker container logs app
+
+//push to Docker Hub
+docker tag airlines_companies_jdk shandar1997/airlines:app_jdk
+docker push shandar1997/airlines:app_jdk
+docker tag airlines_companies_database shandar1997/airlines:mysqldb
+docker push shandar1997/airlines:mysqldb
+
+//create containers when you pull images from dockerhub
+docker run --name localhost -e MYSQL_ROOT_PASSWORD=1111 -e MYSQL_DATABASE=airlines -e MYSQL_PASSWORD=1111 -d shandar1997/airlines:mysqldb
+	//after 30s
+docker run -d -p 8089:8080 --name app --link localhost:mysql  shandar1997/airlines:app_jdk
