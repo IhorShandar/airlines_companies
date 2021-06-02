@@ -2,7 +2,7 @@
 
 METHOD 1
 
-Go to the page: https://hub.docker.com/repository/docker/shandar1997/airlines/tags?page=1&ordering=last_updated. There are docker images that are created in this program.
+Go to the page: https://hub.docker.com/r/shandar1997/airlines/tags?page=1&ordering=last_updated. There are docker images that are created in this program.
 Pull these images from this page in own docker:
 
   docker pull shandar1997/airlines:mysqldb
