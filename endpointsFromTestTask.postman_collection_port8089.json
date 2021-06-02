@@ -20,7 +20,7 @@
 						"airCompanies"
 					]
 				},
-				"description": "get all companies"
+				"description": "get all companies\r\njast Send)))"
 			},
 			"response": []
 		},
@@ -39,7 +39,8 @@
 						"airCompany",
 						"1"
 					]
-				}
+				},
+				"description": "insert desired company id instead of {id}:\r\nlocalhost:8089/airCompany/{id}"
 			},
 			"response": []
 		},
@@ -66,7 +67,8 @@
 					"path": [
 						"airCompany"
 					]
-				}
+				},
+				"description": "Enter Body and update keys values"
 			},
 			"response": []
 		},
@@ -77,7 +79,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 2,\r\n    \"name\":\"Ryanair\",\r\n    \"companyType\": \"transport\",\r\n    \"foundedAt\": \"06.04.2006\"\r\n}",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"name\":\"Ryanair\",\r\n    \"companyType\": \"transport\",\r\n    \"foundedAt\": \"06.04.2007\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -93,7 +95,8 @@
 					"path": [
 						"updateAirCompany"
 					]
-				}
+				},
+				"description": "Enter Body \r\ninsert desired company ID into key value \"id\"\r\nand update others keys values"
 			},
 			"response": []
 		},
@@ -112,7 +115,8 @@
 						"deleteAirCompany",
 						"3"
 					]
-				}
+				},
+				"description": "insert desired company id instead of {id}:\r\nlocalhost:8089/deleteAirCompany/{id}"
 			},
 			"response": []
 		},
@@ -161,7 +165,8 @@
 						"airplane",
 						"1"
 					]
-				}
+				},
+				"description": "insert desired airplane id instead of {id}:\r\nlocalhost:8089/airplane/{id}"
 			},
 			"response": []
 		},
@@ -188,7 +193,8 @@
 					"path": [
 						"airplane"
 					]
-				}
+				},
+				"description": "Enter Body and update keys values"
 			},
 			"response": []
 		},
@@ -215,7 +221,8 @@
 					"path": [
 						"updateAirplane"
 					]
-				}
+				},
+				"description": "Enter Body \r\ninsert desired airplane ID into key value \"id\"\r\nand update others keys values"
 			},
 			"response": []
 		},
@@ -234,7 +241,8 @@
 						"deleteAirplane",
 						"8"
 					]
-				}
+				},
+				"description": "insert desired airplane id instead of {id}:\r\nlocalhost:8089/deleteAirplane/{id}"
 			},
 			"response": []
 		},
@@ -271,7 +279,8 @@
 						"flight",
 						"1"
 					]
-				}
+				},
+				"description": "insert desired flight id instead of {id}:\r\nlocalhost:8089/flight/{id}"
 			},
 			"response": []
 		},
@@ -298,7 +307,8 @@
 					"path": [
 						"flight"
 					]
-				}
+				},
+				"description": "Enter Body and update keys values"
 			},
 			"response": []
 		},
@@ -325,7 +335,8 @@
 					"path": [
 						"updateFlight"
 					]
-				}
+				},
+				"description": "Enter Body \r\nkey value \"id\" - id selected flight\r\nupdate others keys values"
 			},
 			"response": []
 		},
@@ -344,7 +355,8 @@
 						"deleteFlight",
 						"6"
 					]
-				}
+				},
+				"description": "insert desired flight id instead of {id}:\r\nlocalhost:8089/deleteFlight/{id}"
 			},
 			"response": []
 		},
@@ -372,7 +384,7 @@
 						"moveAirplane"
 					]
 				},
-				"description": " move airplanes between companies:\r\n airCompID - new Company ID"
+				"description": "Enter Body\r\n move airplanes between companies:\r\n \"id\" - id selected airplane\r\n insert new Company ID into key value \"airCompID\""
 			},
 			"response": []
 		},
@@ -386,7 +398,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"flightStatus\": \"ACTIVE\",\r\n    \"airCompany\": {\r\n            \"name\": \"Boing\"\r\n        }\r\n}\r\n//you can set status by: \"COMPLETED\", \"ACTIVE\", \"DELAYED\", \"PENDING\"",
+					"raw": "{\r\n    \"flightStatus\": \"ACTIVE\",\r\n    \"airCompany\": {\r\n            \"name\": \"British_Airways\"\r\n        }\r\n}\r\n//you can set status by: \"COMPLETED\", \"ACTIVE\", \"DELAYED\", \"PENDING\"\r\n// in my database is these companies: Austrian_Airlines, British_Airways, Ryanair, Eurowings, Luxair, LEVEL, AirAsia, IndiGo, Turkish_Airlines, Emirates",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -403,7 +415,7 @@
 						"flightStatus"
 					]
 				},
-				"description": "\"name\" - company name for identification of Air Company"
+				"description": "Enter Body\r\n\"flightStatus\" - status you are looking for\r\nkey \"name\" - company name for identification of Air Company"
 			},
 			"response": []
 		},
@@ -421,7 +433,8 @@
 					"path": [
 						"started24HoursAgo"
 					]
-				}
+				},
+				"description": "find all Flights in ACTIVE status and started more than 24 hours ago"
 			},
 			"response": []
 		},
@@ -449,7 +462,7 @@
 						"setStatus"
 					]
 				},
-				"description": "\"id\" - ID selected Flight\r\nif status to change is DELAYED – set delayStartedAt\r\nif status to change is ACTIVE – set createdAt\r\nif status to change is COMPLETED set endedAt"
+				"description": "Enter Body\r\n\"id\" - ID selected Flight\r\nif status to change is DELAYED – set key \"delayStartedAt\"\r\nif status to change is ACTIVE – set key \"createdAt\"\r\nif status to change is COMPLETED set key \"endedAt\""
 			},
 			"response": []
 		},
